@@ -1,0 +1,27 @@
+[project]
+name = "mm-warehouse"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "onchonga-programmer", email = "bochaberibrenda03@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=3.1.1",
+]
+
+[project.scripts]
+mm-warehouse = "mm_warehouse:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.7.0",
+    "pytest>=9.2.0",
+    "ruff>=0.17.5",
+    "sqlfluff>=4.5.0",
+]
