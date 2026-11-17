@@ -1,0 +1,19 @@
+.env
+
+data/*
+!data/.gitkeep
+
+# Python / uv
+.venv/
+__pycache__/
+*.egg-info/
+dist/
+build/uv run pre-commit install
+
+# Tool caches
+.ruff_cache/
+.pytest_cache/
+.sqlfluff_cache/
+
+# Airflow local runs
+airflow/logs/
